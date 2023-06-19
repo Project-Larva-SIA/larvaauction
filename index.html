@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Larva Auction</title>
+    <link rel="icon" href="images/laravaaa.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/hightlightjs-dark.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- <script>
+      hljs.initHighlightingOnLoad();
+    </script> -->
+  </head>
+
+  <body>
+    <div class="left-menu">
+      <div class="content-logo">
+        <div class="logo">
+          <img
+            alt="platform by Emily van den Heever from the Noun Project"
+            title="platform by Emily van den Heever from the Noun Project"
+            src="images/logo.png"
+            height="32"
+          />
+          <h1 style="margin-top: 10px">Auction System</h1>
+        </div>
+        <button class="burger-menu-icon" id="button-menu-mobile">
+          <svg width="34" height="34" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            ></path>
+            <path class="line line2" d="M 20,50 H 80"></path>
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu-closer"></div>
+      <div class="content-menu">
+        <div class="content-infos">
+          <div class="info"><b>Version:</b> 1.1.1</div>
+        </div>
+        <ul>
+          <li class="scroll-to-link active" data-target="content-get-started">
+            <a>OVERVIEW</a>
+          </li>
+          <li class="scroll-to-link" data-target="content-keywords">
+            <a>Keywords</a>
+          </li>
+          <li class="scroll-to-link" data-target="content-authorization">
+            <a>Authorization</a>
+          </li>
+          <li class="scroll-to-link">
+            <a>Features</a>
+          </li>
+          <li
+            class="scroll-to-link"
+            data-target="content-user"
+            style="padding-left: 20px; font-size: 15px"
+          >
+            <a>User</a>
+          </li>
+          <li
+            class="scroll-to-link"
+            data-target="content-inventory"
+            style="padding-left: 20px; font-size: 15px"
+          >
+            <a>Inventory</a>
+          </li>
+          <li
+            class="scroll-to-link"
+            data-target="content-transaction"
+            style="padding-left: 20px; font-size: 15px"
+          >
+            <a>Transaction</a>
+          </li>
+        </ul>
+      </div>
+      <footer style="margin-left: 35px">
+        <p>
+          &copy; <a href="https://github.com/jaycetabobo">L</a>
+          <a href="https://github.com/jieclarkdev">a</a>
+          <a href="https://github.com/jerald-timbang">r</a>
+          <a href="https://github.com/SegundaSeha">v</a>
+          <a href="https://github.com/skhandayan">a</a> &nbsp;
+          <a href="https://github.com/Project-Larva-SIA">Auction</a>. All rights
+          reserved.
+        </p>
+      </footer>
+    </div>
+
+    <div class="content-page">
+      <div class="content-code"></div>
+      <div class="content">
+        <div class="overflow-hidden content-section" id="content-get-started">
+          <h1>API Documentation</h1>
+          <h2>Overview</h2>
+          <p>
+            Overview of Auction System with API Services! Larva Tech
+            Incorporation is proud to present its comprehensive Auction System,
+            equipped with API services, to revolutionize the online auction
+            industry. Our platform provides a seamless and efficient experience
+            for buying and selling a wide! range of goods and services through
+            an intuitive bidding process. With the integration of API services
+            we ensure smooth communication and data exchange between different
+            components, enhancing functionality and integration capabilities.
+          </p>
+          <div class="overflow-hidden content-section" id="content-get-started">
+            <h3>Features</h3>
+            <ul>
+              <li>Allow users to register for an auction system account</li>
+              <li>Allow users to generate or add an item for bidding</li>
+              <li>Allow users to filter and search an item</li>
+              <li>
+                Allow users to see the higher bids and the number of bidders of
+                am specific item.
+              </li>
+              <li>Allow user to add bid amount</li>
+              <li>Allow use to update bid amount</li>
+              <li>
+                Allow user to see the amount and time that the auction item is
+                purchased.
+              </li>
+              <li>Allow item owner to see who are the buyer or buyer ID</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ARCHITECTURAL DESIGN SECTION -->
+
+        <div
+          class="overflow-hidden content-section"
+          id="content-get-characters"
+        >
+          <div class="overflow-hidden content-section" id="content-get-started">
+            <h2>Architectural Design</h2>
+          </div>
+          <pre>
+           
+         <code class="bash">
+          <div>
+            <img
+              src="images/achi_des.jpg"
+              alt="architectural"
+              width="75%"
+              style="border-radius: 10px;"
+            />
+          </div>  
+        </code>
+        
+        </pre>
+
+          <p>
+            This is the Architectural Design Model: :<br />
+            <code class="higlighted break-word"
+              >https://trello.com/1/cards/648d91199b8053857ec41d33/attachments/648d9163ea8866f1d7f121b2/download/achi_des.jpg</code
+            >
+          </p>
+          <br />
+        </div>
+
+        <!-- KEYWORDS FOR PARAMS -->
+        <div class="overflow-hidden content-section" id="content-keywords">
+          <h2>get keywords</h2>
+
+          <h4>KEYWORD PARAMETERS</h4>
+          <table class="central-overflow-x">
+            <thead>
+              <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>q</td>
+                <td>String</td>
+                <td>query for show name feature</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>String</td>
+                <td>A search word to find character by name.</td>
+              </tr>
+              <tr>
+                <td>token</td>
+                <td>String</td>
+                <td>
+                  for authorization of users to access microservices in gateway
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- AUTHORIZATION SECTION  -->
+
+        <div class="overflow-hidden content-section" id="content-authorization">
+          <h2>Authorization</h2>
+          <h3 style="font-weight: normal">PERFORMING BASIC AUTHORIZATION</h3>
+          <p>
+            A password and an email are required for basic authorization before
+            it will To access all the microservices, provide an access token. In
+            order to register, It requires a name, email address, password, and
+            also provides an access token.
+          </p>
+          <h4>Login</h4>
+
+          <pre>
+       
+            <code>
+             {
+          
+                 "<span style="color: yellow; font-weight: bold;">access_token</span>": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.<br>eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDQvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNjg3MTU4Mj<br>U3LCJleHAiOjE2ODcxNjE4NTcsIm5iZiI6MTY4Nz <br>E1ODI1NywianRpIjoiZGd4YkpHS3c2VHFxaEhzMSIsInN1YiI6IjciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZT<br>cwMWM0MDA4NzJkYjdhNTk3NmY3In0.qPuKIOGd8aHWZLYW2<br>UrEXAdc6BCGqltTAXtbdrs7cGI",
+             
+              
+               "<span style="color: yellow; font-weight: bold;">token_type</span>": "bearer",
+               "<span style="color: yellow; font-weight: bold;">user</span>": {
+                   "<span style="color: yellow; font-weight: bold;">id</span>": 7,
+                   "<span style="color: yellow; font-weight: bold;">name</span>": "Sean Kirk Handayan",
+                   "<span style="color: yellow; font-weight: bold;">email</span>": "seanhandayanawdawd@gmail.com",
+                   "<span style="color: yellow; font-weight: bold;">password</span>": "$2y$10$qO5MQk8/hs6McO3VkWz/DO0QtI.oZyLz6p/WeylSLBgh.bYVH1KhK",
+                   "<span style="color: yellow; font-weight: bold;">created_at</span>": "2023-06-19T07:04:17.000000Z",
+                   "<span style="color: yellow; font-weight: bold;">updated_at</span>": "2023-06-19T07:04:17.000000Z"
+               },
+               "<span style="color: yellow; font-weight: bold;">expires_in</span>": 86400
+           }
+            </code>
+           </pre>
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/register.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Registration -->
+        <div class="overflow-hidden content-section" id="content-authorization">
+          <h4>Registration</h4>
+          <pre>
+       
+            <code>
+             {
+          
+                 "<span style="color: yellow; font-weight: bold;">access_token</span>": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.<br>eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDQvYXBpL3JlZ2lzdGVyIiwiaWF0IjoxNjg3MTU4Mj<br>U3LCJleHAiOjE2ODcxNjE4NTcsIm5iZiI6MTY4Nz <br>E1ODI1NywianRpIjoiZGd4YkpHS3c2VHFxaEhzMSIsInN1YiI6IjciLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZT<br>cwMWM0MDA4NzJkYjdhNTk3NmY3In0.qPuKIOGd8aHWZLYW2<br>UrEXAdc6BCGqltTAXtbdrs7cGI",
+             
+              
+               "<span style="color: yellow; font-weight: bold;">token_type</span>": "bearer",
+               "<span style="color: yellow; font-weight: bold;">user</span>": {
+                   "<span style="color: yellow; font-weight: bold;">id</span>": 7,
+                   "<span style="color: yellow; font-weight: bold;">name</span>": "Sean Kirk Handayan",
+                   "<span style="color: yellow; font-weight: bold;">email</span>": "seanhandayanawdawd@gmail.com",
+                   "<span style="color: yellow; font-weight: bold;">password</span>": "$2y$10$qO5MQk8/hs6McO3VkWz/DO0QtI.oZyLz6p/WeylSLBgh.bYVH1KhK",
+                   "<span style="color: yellow; font-weight: bold;">created_at</span>": "2023-06-19T07:04:17.000000Z",
+                   "<span style="color: yellow; font-weight: bold;">updated_at</span>": "2023-06-19T07:04:17.000000Z"
+               },
+               "<span style="color: yellow; font-weight: bold;">expires_in</span>": 86400
+           }
+            </code>
+           </pre>
+          <pre>
+           
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Registration</p> -->
+               <img
+                 src="images/login.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Features -->
+        <div class="overflow-hidden content-section">
+          <h2>Features</h2>
+          <h3
+            style="font-weight: normal; padding-right: 15px"
+            id="content-user"
+          >
+            User
+          </h3>
+          <h3 style="font-weight: normal">SHOW SPECIFIC NAME</h3>
+          <p>
+            The q keyword and the value supplied determine which name will be
+            displayed by this feature route. It will be beneficial to the client
+            and admin sides so they may perform a user name search.
+          </p>
+          <h4 style="color: green">GET</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/name/search
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+          <h4 style="color: #034c8f; font-weight: normal; margin-top: 10px">
+            Params
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+              margin-bottom: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Key: q
+            </p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Value: jayc
+            </p>
+          </div>
+          <h4 style="color: #034c8f; font-weight: normal">Authorization</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              { <br />
+              data: [ { "id": 3,<br />
+              "name": "Jayce Tabobo", <br />
+              "email": "jaycetabobo@gmail.com", <br />
+              "password":"$2y$10$UWdbG6xVHWAd74kre0r4Kue/qcB08kj2JhM75tnthtD6S6bse6Zs6",
+              <br />
+              "created_at": "2023-06-19 01:46:15", <br />
+              "updated_at": "2023-06-19 01:46:15" <br />
+              } ] }
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/searchbyname.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Inventory Features -->
+        <div class="overflow-hidden content-section">
+          <h3
+            style="font-weight: normal; padding-right: 15px"
+            id="content-inventory"
+          >
+            Inventory
+          </h3>
+          <h3 style="font-weight: normal">Search Item Name</h3>
+          <p>
+            The "Search Item Name" feature allows both clients and
+            administrators to easily search for specific item names within a
+            system or application. By using the "s" keyword and providing a
+            value, users can initiate a search query to find the desired item
+            name. This feature enhances user experience by enabling efficient
+            and convenient searching capabilities, benefiting both clients and
+            administrators.
+          </p>
+          <h4 style="color: green">GET</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/filter
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+          <h4 style="color: #034c8f; font-weight: normal; margin-top: 10px">
+            Params
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+              margin-bottom: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Key: s
+            </p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Value: luna
+            </p>
+          </div>
+          <h4 style="color: #034c8f; font-weight: normal">Authorization</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              [ { "ItemID": 1, <br />
+              "ItemName": "Lunar Meteorite Fragment", <br />
+              "Description": "This extraordinary lunar meteorite fragment is an
+              authentic piece from the Moon, offering a glimpse into our
+              celestial neighbor. It was formed billions of years ago during a
+              meteorite impact on the lunar surface. The fragment exhibits
+              fascinating lunar regolith texture and is accompanied by a
+              certificate of authenticity. It's a remarkable keepsake for space
+              enthusiasts and collectors alike.", <br />
+              "StartingBid": "2500.00", <br />
+              "CurrentBid": "9050.00", <br />
+              "BidderID": 2 <br />
+              } ]
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/SeachItemName.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Show Higher Bids -->
+        <div class="overflow-hidden content-section">
+          <h3 style="font-weight: normal">Show Higher Bids Item</h3>
+          <p>
+            The Show Higher Bids Item function displays the item name as well as
+            the current bid. bids, and the overall order of bids is displayed
+            from highest to lowest.
+          </p>
+          <h4 style="color: green">GET</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/highbids
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+
+          <h4
+            style="
+              color: #034c8f;
+              font-weight: normal;
+              margin-top: 15px;
+              padding-left: 50px;
+            "
+          >
+            Authorization
+          </h4>
+
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              {<br />
+              "data": [<br />
+              { <br />
+              "ItemName": "Lunar Meteorite Fragment",<br />
+              "CurrentBid": "9050.00" <br />
+              },<br />
+              {<br />
+              "ItemName": "MacBook Pro",<br />
+              "CurrentBid": "1500.00"<br />
+              } <br />
+              ], <br />
+              "database": "inventory" <br />
+              } <br />
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/showhighbid.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Update Bid Amount -->
+        <div class="overflow-hidden content-section">
+          <h3 style="font-weight: normal">Update Bid Amount</h3>
+          <p>
+            This feature involves updating the bid amount in a bidding system.
+            The feature is designed to trigger an update under certain
+            conditions. Specifically, if the user's bid exceeds both the
+            starting bid and the current bid, and the bid is associated with a
+            specific item ID, the bid amount will be updated.
+          </p>
+          <p>
+            This suggests that the feature allows users to participate in a
+            bidding process where they can place bids on items. When a user
+            submits a bid for a particular item, the system compares the user's
+            bid amount with the starting bid and the current highest bid. If the
+            user's bid is higher than both of these amounts and is linked to the
+            correct item ID, the bid amount will be adjusted or updated.
+          </p>
+          <h4 style="color: #097bed">PUT</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/updatebid/45
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+          <h4 style="color: #034c8f; font-weight: normal; margin-top: 10px">
+            Params
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+              margin-bottom: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Key: BidAmount
+            </p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Value: 9400
+            </p>
+          </div>
+          <h4 style="color: #034c8f; font-weight: normal">Authorization</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              { <br />
+              "table 1": { <br />
+              "ItemID": 1, <br />
+              "ItemName": "Lunar Meteorite Fragment", <br />
+              "Description": "This extraordinary lunar meteorite fragment is an
+              authentic piece from the Moon, offering a glimpse into our
+              celestial neighbor. It was formed billions of years ago during a
+              meteorite impact on the lunar surface. The fragment exhibits
+              fascinating lunar regolith texture and is accompanied by a
+              certificate of authenticity. It's a remarkable keepsake for space
+              enthusiasts and collectors alike.", <br />
+              "StartingBid": "2500.00", <br />
+              "CurrentBid": "9051", <br />
+              "BidderID": 2 <br />
+              }, <br />
+              "table 2": { <br />
+              "BidID": 45, <br />
+              "ItemID": 1, <br />
+              "BidderID": 2, <br />
+              "BidAmount": "9051", <br />
+              "BidTime": "2023-06-18" <br />
+              }, <br />
+              "database": "inventory" <br />
+              } <br />
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/updatebidamount.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Add Bid Amount -->
+        <div class="overflow-hidden content-section">
+          <h3 style="font-weight: normal">Add Bid Amount</h3>
+          <p>
+            This feature involves adding a bid amount to a specific item. This
+            feature allows users to contribute or increase the current bid
+            amount associated with a particular item in the bidding system.When
+            utilizing this feature, users have the ability to input a bid amount
+            that they wish to add to a specific item. This bid amount can be
+            higher or lower than the current bid, depending on the bidding
+            strategy or preferences of the user.
+          </p>
+
+          <h4 style="color: orange">POST</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/add/bidamount
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+          <h4 style="color: #034c8f; font-weight: normal; margin-top: 10px">
+            Params
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+              margin-bottom: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Key: ItemID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Value: 12<br />
+              Key: BidderID &nbsp; &nbsp; &nbsp; Value: 3 <br />
+              Key: BidAmount &nbsp; Value: 1500<br />
+            </p>
+            <!-- <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Value: 9400
+            </p> -->
+          </div>
+          <h4 style="color: #034c8f; font-weight: normal">Authorization</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              { <br />
+              "data": { <br />
+              "ItemID": "12",<br />
+              "BidderID": "3", <br />
+              "BidAmount": "1500", <br />
+              "BidTime": "2023-06-19T09:17:59.773163Z", <br />
+              "BidID": 47 <br />
+              }, <br />
+              "database": "inventory" <br />
+              } <br />
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/addbidamount.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Show Bid Details -->
+        <div class="overflow-hidden content-section">
+          <h3 style="font-weight: normal">Show Bid Details</h3>
+          <p>
+            The feature is designed to provide detailed information about a
+            specific bid by utilizing a BidID. With this feature, users can
+            retrieve comprehensive details and insights regarding a particular
+            bid within the bidding system.
+          </p>
+
+          <h4 style="color: green">GET</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/bid/info/45
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+
+          <h4 style="color: #034c8f; font-weight: normal">Authorization</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              { <br />
+              "BidderID": 2, <br />
+              "BidAmount": "9051.00", <br />
+              "ItemName": "Lunar Meteorite Fragment" <br />
+              } <br />
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/showbiddetails.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+
+        <!-- Transaction Features -->
+        <div class="overflow-hidden content-section" id="content-transaction">
+          <h3 style="font-weight: normal; padding-right: 15px">Transaction</h3>
+          <h3 style="font-weight: normal">Claim Item</h3>
+          <p>
+            The feature mentioned allows users to claim the items they have won
+            using the unique ItemID associated with each item. When users
+            participate in a contest, auction, or any other activity where they
+            have the chance to win items, they are assigned an ItemID when they
+            successfully win an item.
+          </p>
+          <h4 style="color: green">GET</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/t/claim/1
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+
+          <h4
+            style="
+              color: #034c8f;
+              font-weight: normal;
+              margin-top: 15px;
+              padding-left: 50px;
+            "
+          >
+            Authorization
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              { <br />
+              "data": { <br />
+              "ItemID": 1, <br />
+              "BuyerID": 1, <br />
+              "TransactionAmount": "2500.88",<br />
+              "TransactionTime": "2023-06-08 18:31:29" <br />
+              }, <br />
+              "database": "Transaction" <br />
+              } <br />
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/claimitem.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+        <!-- Show Buyer Details -->
+        <div class="overflow-hidden content-section" id="content-transaction">
+          <h3 style="font-weight: normal">Show Buyer Details</h3>
+          <p>
+            The feature allows sellers to view the buyer or winner of an item
+            they have sold using the ItemID associated with that particular
+            item. When sellers list items for sale on the auction system each
+            item is typically assigned a unique ItemID.
+          </p>
+          <p>
+            With this feature, sellers can easily access information about the
+            buyer or winner of an item by entering the ItemID into a designated
+            section or page on the platform.
+          </p>
+          <h4 style="color: green">GET</h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">
+              localhost:8004/buyer/1
+            </p>
+          </div>
+          <br />
+          <h4 style="color: orange">Request</h4>
+
+          <h4
+            style="
+              color: #034c8f;
+              font-weight: normal;
+              margin-top: 15px;
+              padding-left: 50px;
+            "
+          >
+            Authorization
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: 500 !important">Bearer Token</p>
+            <p style="margin: 0; font-weight: 500 !important; font-size: 14px">
+              Token:
+            </p>
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob
+              3N0OjgwMDQvYXBpL2xvZ2luIiwiaWF0IjoxNjg
+              3MTYxMTY4LCJleHAiOjE2ODcxNjQ3NjgsIm5iZiI6MTY4NzE2MTE2OCwianRpIjo
+              iWEVxeHYxZkRXcHNtSmJGYyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5Z
+              jYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7ff3odgrSRmva1vhXf7NxUWl-fHLQMhV2AnURaaUQ0Q
+            </p>
+          </div>
+          <h4 style="color: orange; font-weight: normal; margin-top: 15px">
+            Response: <span style="color: green; font-weight: 500">200</span>
+          </h4>
+          <div
+            style="
+              border: 1px solid gray;
+              width: 40%;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 3em;
+              background-color: aliceblue;
+              margin-top: 15px;
+            "
+          >
+            <p style="margin: 0; font-weight: normal !important; color: green">
+              { <br />
+              "data": [ <br />
+              { <br />
+              "ItemID": 1, <br />
+              "BuyerID": 1 <br />
+              } <br />
+              ], <br />
+              "database": "Transaction" <br />
+              } <br />
+            </p>
+          </div>
+
+          <pre>
+            <code class="bash">
+             <div>
+              <!-- <p style="text-align: center; text-transform: uppercase; color: white; font-weight: bold;">Login</p> -->
+               <img
+                 src="images/showbuyerdetails.png"
+                 alt="architectural"
+                 width="80%"
+                 style="border-radius: 10px;"
+               />
+             </div>  
+           </code>
+           
+           </pre>
+        </div>
+      </div>
+      <div class="content-code"></div>
+    </div>
+    <!-- Github Repo-->
+    <a
+      href="https://github.com/Project-Larva-SIA"
+      class="github-corner"
+      aria-label="View source on Github"
+      title="View source on Github"
+      ><svg
+        width="80"
+        height="80"
+        viewBox="0 0 250 250"
+        style="
+          z-index: 99999;
+          fill: #70b7fd;
+          color: #fff;
+          position: fixed;
+          top: 0;
+          border: 0;
+          right: 0;
+        "
+        aria-hidden="true"
+      >
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor"
+          style="transform-origin: 130px 106px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor"
+          class="octo-body"
+        ></path></svg></a
+    ><style>
+      .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+      }
+      @keyframes octocat-wave {
+        0%,
+        100% {
+          transform: rotate(0);
+        }
+        20%,
+        60% {
+          transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+      @media (max-width: 500px) {
+        .github-corner:hover .octo-arm {
+          animation: none;
+        }
+        .github-corner .octo-arm {
+          animation: octocat-wave 560ms ease-in-out;
+        }
+      }
+      @media only screen and (max-width: 680px) {
+        .github-corner > svg {
+          right: auto !important;
+          left: 0 !important;
+          transform: rotate(270deg) !important;
+        }
+      }
+    </style>
+    <!-- END Github Corner Ribbon - to remove -->
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
